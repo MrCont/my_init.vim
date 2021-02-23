@@ -8,4 +8,4 @@ Basic usage
 ---
 clone the repo and then run nvim_export.sh to export nvim configuration
 
-to quick install neovim make sure you have nvim folder in the repo folder and then run nvim_import.sh
+to quick install neovim make sure you have nvim folder in the repo folder and then run nvim_load.sh
