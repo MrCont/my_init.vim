@@ -1,5 +1,7 @@
 "set leader key
 let g:mapleader = "\<Space>"
+set mouse=a
+source $VIMRUNTIME/mswin.vim
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
