@@ -3,7 +3,8 @@
 echo "Initializing..."
 echo "removing if present nvim folder in ~/.config"
 sudo rm -r ~/.config/nvim
-
+echo "making ~/.config directory if not present"
+mkdir ~/.config
 sudo apt install neovim
 
 echo "copying nvim config files"
