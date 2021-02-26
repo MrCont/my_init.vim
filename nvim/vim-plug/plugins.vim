@@ -1,5 +1,6 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
-Plug 'liuchengxu/vim-which-key'
+
+Plug 'tpope/vim-fugitive'
 Plug 'unblevable/quick-scope'
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/nerdtree'
@@ -9,4 +10,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
     "AUTOPLUGIN INSTALLATION
-"autocmd VimEnter * PlugInstall 
+autocmd VimEnter * PlugInstall 
+autocmd VimEnter * q
+autocmd VimEnter * PlugClean
+autocmd VimEnter * q
