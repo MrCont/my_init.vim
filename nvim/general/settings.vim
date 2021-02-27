@@ -41,7 +41,7 @@ set nu                                  "show current line num
 set colorcolumn=80                      "line at 80 char
 set signcolumn                          "adds a column to the left
 
-au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vim alternatively you can run :source $MYVIMRC
 
 " You can't stop me
 cmap w!! w !sudo tee %

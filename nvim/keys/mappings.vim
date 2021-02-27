@@ -13,7 +13,7 @@ inoremap <expr> <c-k> ("\<C-p>")
  inoremap kj <Esc>
 
  " Easy CAPS"
-inoremap <c-u> <ESC>viwUi
+ inoremap <c-u> <ESC>viwUi
  nnoremap <c-u> viwU<Esc>
 
  " TAB in general mode will move to text buffer
@@ -39,8 +39,4 @@ inoremap <c-u> <ESC>viwUi
  nnoremap <C-j> <C-w>j
  nnoremap <C-k> <C-w>k
  nnoremap <C-l> <C-w>l
-
- "highlighted region moving
-nnoremap J :m '>+1<CR>gv=gv
-nnoremap K :m '<-2<CR>gv=gv
 

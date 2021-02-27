@@ -7,10 +7,10 @@ Plug 'preservim/nerdtree'
 Plug 'frazrepo/vim-rainbow'
 Plug 'gruvbox-community/gruvbox'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 
     "AUTOPLUGIN INSTALLATION
-autocmd VimEnter * PlugInstall 
-autocmd VimEnter * q
-autocmd VimEnter * PlugClean
-autocmd VimEnter * q
+autocmd VimLeave * PlugInstall 
+autocmd VimLeave * PlugClean
