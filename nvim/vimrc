@@ -1,4 +1,3 @@
-
 set relativenumber                      " Show relative line numbers
 set nu                                  " Show line number
 set autoindent		                    " New lines inherit the indentation of previous lines.
@@ -77,10 +76,22 @@ nnoremap ,v :!vim $HOME/vimfiles/vimrc<CR>
 nmap ,p "0p
 nmap ,P "0P
 
+call plug#begin('~/.vim/plugged')
+    Plug 'godlygeek/csapprox'
+    Plug 'tpope/vim-surround'
+    Plug 'itchyny/lightline.vim'
+    Plug 'morhetz/gruvbox'
+    Plug 'davidhalter/jedi'
+    Plug 'tpope/vim-fugitive'
+    Plug 'mhinz/vim-startify'
+    Plug 'tpope/vim-repeat'
+    Plug 'preservim/nerdtree'
+    Plug 'easymotion/vim-easymotion'
+call plug#end()
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " plugin-manager                    Vim-Plug
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.config/nvim/vim-plug/plugins.vim
 nnoremap \pi :PlugInstall<CR>
 nnoremap \pc :PlugClean<CR>
 

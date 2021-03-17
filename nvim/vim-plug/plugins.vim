@@ -1,13 +1,15 @@
 call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'jiangmiao/auto-pairs'
 
-Plug 'preservim/nerdcommenter'
-Plug 'tpope/vim-fugitive'
-Plug 'unblevable/quick-scope'
-Plug 'itchyny/lightline.vim'
-Plug 'preservim/nerdtree'
-Plug 'frazrepo/vim-rainbow'
-Plug 'gruvbox-community/gruvbox'
+    Plug 'tpope/vim-surround'
+    Plug 'itchyny/lightline.vim'
+    Plug 'morhetz/gruvbox'
+    Plug 'davidhalter/jedi'
+    Plug 'tpope/vim-fugitive'
+    Plug 'mhinz/vim-startify'
+    Plug 'tpope/vim-repeat'
+    Plug 'preservim/nerdtree'
+    Plug 'easymotion/vim-easymotion'
 
 call plug#end()
 
