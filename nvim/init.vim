@@ -29,7 +29,12 @@ set incsearch
 set smartcase                           " search case sensitive only when uppercase is used
 set noswapfile                          " no more swap messages
 set clipboard+=unnamedplus              " paste and copy with outside
-
+set scrolloff=10                        " start scolling when x lines ahead
+set colorcolumn=80                      " color column number 80 to remind to be coincise 
+set signcolumn=yes
+set nohlsearch                          " after searching stu will not remain highlighted
+set updatetime=50
+                        
 set background=dark
 set termguicolors                       " proper colors enabled
 set t_ut=""                             " no background erasing
@@ -46,7 +51,7 @@ nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
-"I hate escape more than anything else
+" ,e to exit from any mode 
 nnoremap ,e <Esc>
 vnoremap ,e <Esc>gV
 onoremap ,e <Esc>
@@ -69,9 +74,9 @@ nnoremap ,q :q<CR>
 nnoremap ,s :up<CR>
 
 " Better help and reloading vimrc
-nnoremap <C-h> :help
-nnoremap <C-;> :source vimrc<CR>
-nnoremap ,v :!vim $HOME/vimfiles/vimrc<CR>
+nnoremap ,h :help
+nnoremap <C-;> :source ~/.config/nvim/init.vim<CR>
+nnoremap ,v :!nvim ~/.config/nvim/init.vim<CR>
 
 " Paste yanked line
 nmap ,p "0p
