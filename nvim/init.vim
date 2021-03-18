@@ -74,13 +74,23 @@ nnoremap ,q :q<CR>
 nnoremap ,s :up<CR>
 
 " Better help and reloading vimrc
-nnoremap ,h :help
 nnoremap <C-;> :source ~/.config/nvim/init.vim<CR>
 nnoremap ,v :!nvim ~/.config/nvim/init.vim<CR>
 
 " Paste yanked line
 nmap ,p "0p
 nmap ,P "0P
+
+" moving lines
+nnoremap \j :m+<cr>
+nnoremap \k :m-2<cr>
+
+" go to EOL and insert 
+nnoremap ,ll &a
+
+" set default deletion like backspace
+nnoremap x X
+nnoremap X x
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " plugin-manager                    Vim-Plug
